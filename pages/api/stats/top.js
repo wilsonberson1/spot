@@ -1,5 +1,5 @@
 import cookie from 'cookie';
-import { fetchFromSpotify } from '../../../lib/spotify';
+import { fetchFromSpotify } from '../../../../lib/spotify';
 
 export default async function handler(req, res) {
   const cookies = cookie.parse(req.headers.cookie || '');
