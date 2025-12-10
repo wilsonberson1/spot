@@ -10,8 +10,8 @@ export default function Home() {
         <div style={styles.card}>
           <h1 style={styles.title}>SpotStats</h1>
           <p style={styles.subtitle}>
-            Veja seus artistas e músicas mais ouvidos a qualquer momento,
-            sem esperar o Spotify Wrapped e sem salvar nenhum dado seu.
+            Veja seus artistas, músicas, gêneros e horários mais ouvidos a qualquer momento,
+            sem esperar o Spotify Wrapped e sem salvar nenhum dado seu em banco.
           </p>
 
           <a href="/api/login" style={styles.button}>
@@ -19,8 +19,8 @@ export default function Home() {
           </a>
 
           <p style={styles.info}>
-            O SpotStats usa a API oficial do Spotify, não armazena seus dados em banco
-            e usa apenas cookies de sessão para buscar suas estatísticas em tempo real.
+            O SpotStats usa a API oficial do Spotify, não armazena suas músicas, e apenas
+            mantém um token de sessão temporário para montar seu painel.
           </p>
         </div>
       </main>
@@ -39,9 +39,9 @@ const styles = {
     padding: '16px'
   },
   card: {
-    maxWidth: '520px',
+    maxWidth: '620px',
     width: '100%',
-    backgroundColor: 'rgba(0,0,0,0.8)',
+    backgroundColor: 'rgba(0,0,0,0.85)',
     borderRadius: '16px',
     padding: '32px',
     boxShadow: '0 18px 40px rgba(0,0,0,0.6)',
@@ -49,7 +49,7 @@ const styles = {
     textAlign: 'center'
   },
   title: {
-    fontSize: '2rem',
+    fontSize: '2.4rem',
     marginBottom: '8px'
   },
   subtitle: {
